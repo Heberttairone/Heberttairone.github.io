@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niver de Lila</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        h1 {
+            color: #ff5733;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info div {
+            margin-bottom: 20px;
+        }
+
+        #profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Feliz Aniversário Lila!</h1>
+        <img id="profile-pic" src="sua-imagem-aqui.jpg" alt="Foto de Lila">
+        <div class="info">
+            <div>
+                <h2>Data de Nascimento</h2>
+                <p>DD/MM/AAAA</p>
+            </div>
+            <div>
+                <h2>Idade</h2>
+                <p>XX anos</p>
+            </div>
+            <div>
+                <h2>Mensagem Personalizada</h2>
+                <p>Escreva sua mensagem personalizada aqui.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            // Configurações das partículas
+            // ...
+        });
+    </script>
+</body>
+
+</html>
