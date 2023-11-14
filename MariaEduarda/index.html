@@ -27,7 +27,7 @@
         .container {
             text-align: center;
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 50px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 1;
@@ -43,19 +43,25 @@
             color: #333;
             font-size: 18px;
             margin-bottom: 30px;
+            text-align: left;
         }
 
         .info {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .info div {
-            margin: 0 20px;
+            margin: 20px 0;
+            width: 100%;
         }
-        
-        #profile-pic{
-            width: 250px;
+
+        #profile-pic {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -69,52 +75,27 @@
         <div class="info">
             <div>
                 <h2>Tentativas de Desapego: Uma Despedida Poética</h2>
-                <p>Hoje, eu chorei até o amanhecer<br>
-                    porque na minha memória só tinha você<br><br> 
-                    
-                    E você me consome e some...<br><br> 
-                    
-                    Tudo que eu fiz foi só pra te ter,<br>
-                    mudei a rota toda querendo te ver,<br>
-                    mas seu endereço tá aonde??<br><br> 
-                    
-                    Onde está você? <br><br>
-                    
-                    Nunca mais vamos nos ver?<br>
-                    E o "eu te amo" dito ao anoitecer?<br>
-                    Cê mostra que sente e depois se esconde <br><br>
-                    
-                    Me devolve aquilo que só dei pra você:<br> 
-                    Meu tempo, coração, beijo, vinho rose e as madrugadas no telefone...<br><br>
-                    
-                    Eu preciso te esquecer,<br>
-                    quero lembrar quem sou longe de você, mas meu peito ainda grita seu nome <br><br>
-                    
+                <p><img src="imagem1.jpg" alt="Imagem 1" style="width: 100%; max-width: 500px;"><br>
+                    Hoje, eu chorei até o amanhecer porque na minha memória só tinha você<br>
+                    E você me consome e some...<br>
+                    Tudo que eu fiz foi só pra te ter, mudei a rota toda querendo te ver, mas seu endereço tá aonde??<br>
+                    Onde está você?<br>
+                    Nunca mais vamos nos ver? E o "eu te amo" dito ao anoitecer?<br>
+                    Cê mostra que sente e depois se esconde<br>
+                    Me devolve aquilo que só dei pra você: Meu tempo, coração, beijo, vinho rose e as madrugadas no telefone...<br>
+                    Eu preciso te esquecer, quero lembrar quem sou longe de você, mas meu peito ainda grita seu nome<br>
                     Tira tudo de mim e não venha mais me ver porque eu tô partindo e desistindo de você.</p>
             </div>
             <div>
                 <h2>Em (des)construção 🏗️</h2>
-                <p>Eu me escondi nos meus sapatos, bolsas e brincos<br><br>
-
-                    Medi cada um de meus atos e silenciei meus instintos<br><br>
-                    
-                    Eu me tornei "impecável"<br><br>
-                    
-                    Era amável para todos, mas pra mim, desagradável<br><br>
-                    
-                    Sem contestar e nem reclamar, eu fui moldada<br><br>
-                    
-                    Me tornei tudo aquilo que eu menos admirava<br><br>
-                    
-                    E dia após dia <br>
-                    meu eu se dissi-<br>
-                    pava,<br>
-                    até <br>
-                    não <br>
-                    restar <br>
-                    na<br>
-                    d<br>
-                    ..</p>
+                <p><img src="imagem2.jpg" alt="Imagem 2" style="width: 100%; max-width: 500px;"><br>
+                    Eu me escondi nos meus sapatos, bolsas e brincos<br>
+                    Medi cada um de meus atos e silenciei meus instintos<br>
+                    Eu me tornei "impecável"<br>
+                    Era amável para todos, mas pra mim, desagradável<br>
+                    Sem contestar e nem reclamar, eu fui moldada<br>
+                    Me tornei tudo aquilo que eu menos admirava<br>
+                    E dia após dia meu eu se dissi- pava, até não restar na d ..</p>
             </div>
         </div>
     </div>
@@ -209,6 +190,7 @@
                         distance: 400,
                         size: 40,
                         duration: 2,
+                        opacity: 
                         opacity: 8,
                         speed: 3
                     },
