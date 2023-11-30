@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niver de Luiza</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+    
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px; /* Reduzi o padding para dispositivos menores */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            max-width: 600px; /* Adicionei uma largura máxima para evitar que fique muito largo em dispositivos maiores */
+            width: 90%; /* Adicionei uma largura para garantir que o conteúdo seja responsivo em dispositivos menores */
+        }
+    
+        h1 {
+            color: #ff5733;
+            font-size: 24px; /* Reduzi o tamanho da fonte para dispositivos menores */
+            margin-bottom: 10px; /* Reduzi a margem inferior para dispositivos menores */
+        }
+    
+        #profile-pic {
+            width: 150px; /* Reduzi o tamanho da imagem para dispositivos menores */
+            border-radius: 50%;
+        }
+    
+        h2 {
+            font-size: 16px; /* Reduzi o tamanho da fonte para dispositivos menores */
+            margin-bottom: 15px; /* Reduzi a margem inferior para dispositivos menores */
+        }
+    
+        p {
+            font-size: 14px; /* Reduzi o tamanho da fonte para dispositivos menores */
+            margin-bottom: 20px; /* Reduzi a margem inferior para dispositivos menores */
+        }
+    
+        .info {
+            flex-direction: column; /* Alterei a direção da flexbox para dispositivos menores */
+        }
+    
+        .info div {
+            margin: 10px 0; /* Ajustei a margem para dispositivos menores */
+        }
+    
+        footer {
+            margin-top: 20px; /* Adicionei uma margem superior para dispositivos menores */
+        }
+    
+        footer p {
+            font-size: 12px; /* Reduzi o tamanho da fonte para dispositivos menores */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Feliz Aniversário Luiza!</h1>
+        <img id="profile-pic" src="lila.jpeg" alt="Foto de Luiza">
+        <h2>Te desejo toda saúde e felicidade desse mundo, que você continue sendo esse ser humano incrível, inteligente, simpática, carismática e linda!!</h2>
+        <div class="info">
+            <div>
+                <h2></h2>
+                <p>Esse site é para Luiza Moreira AKA Moana de Ipanema. Se tu não é essa pessoa peço encarecidademente que se pique...</p>
+            </div>
+            <div>
+                <h2>Quantos anos mesmo?</h2>
+                <p>16? 23? humm é 23, parabéns nem parece, muita babosa e abacate envolvido </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#ff5733'
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 5,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#ff5733',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    <footer>
+        <p style="font-size: 16px; color: #333; text-align: center; margin-top: 20px;">
+            祝福你生日快乐，幸福安康！
+            <br>
+            Mommy Shark
+        </p>
+    </footer>
+</body>
+
+
+</html>
