@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro, .photos, .messages {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ff6f61;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.photo-slot {
+    background-color: white;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #ff6f61;
+}
+
+.messages .message {
+    background-color: white;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ff6f61;
+}
+
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ff6f61;
+    border-radius: 5px;
+    outline: none;
+    }
+    
+    .login-container button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    }
+    
+    .login-container button
+    {
+    background-color: #e55a50;
+    }
+    
+    .error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
